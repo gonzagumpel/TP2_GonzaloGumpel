@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #FCF0E1;
+    color: #FF4E32;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 5.625em;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration-line: underline;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.botón-instagram {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FF4E32;
+    border: 2px solid #FF4E32;
+    border-style: dotted;
+    border-radius: 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botón-instagram:hover {
+    background-color: #FF4E32;
+    color: #FCF0E1;
+}
+
+#joyas-sneaker, #Clásicos-colaboraciones, #cultura-estilo {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.tres-imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tres-imagenes img {
+    width: 30%;
+    transition: filter 0.3s ease;
+}
+
+.tres-imagenes img:hover {
+    filter: opacity(0.35);
+}
+
+.imagen-centro {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #FF4E32;
+    width: 100%;
+    height: 10vh;
+    color: #FCF0E1;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .tres-imagenes {
+        flex-direction: column;
+    }
+
+    .tres-imagenes img {
+        width: 100%;
+    }
+}
+
